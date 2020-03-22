@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="xebia.test.weather.forecast.ui.fragments.landing.LandingFragment"
+        tools:layout="@layout/landing_fragment"
+        android:label="LandingFragment" >
+
+        <action
+            android:id="@+id/action_open_step1Fragment"
+            app:destination="@id/step1Fragment" />
+        <action
+            android:id="@+id/action_open_step2Fragment"
+            app:destination="@id/step2Fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/step1Fragment"
+        android:name="xebia.test.weather.forecast.ui.fragments.step1.Step1Fragment"
+        tools:layout="@layout/step1_fragment"
+        android:label="Step1Fragment" />
+
+    <fragment
+        android:id="@+id/step2Fragment"
+        android:name="xebia.test.weather.forecast.ui.fragments.step2.Step2Fragment"
+        tools:layout="@layout/step2_fragment"
+        android:label="Step1Fragment" />
+
+</navigation>

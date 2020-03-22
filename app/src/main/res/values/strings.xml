@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="landing_name">Landing</string>
+
+    <string name="permissions_error_msg">Permissions Not Granted </string>
+    <string name="no_data_available_txt">No Data Available</string>
+    <string name="min_temperature_label_txt">Min Temp</string>
+    <string name="max_temperature_label_txt">Max Temp</string>
+    <string name="wind_speed_label_txt">Wind Speed</string>
+    <string name="weather_desc_label_txt">Weather Description</string>
+
+    <string name="no_internet_msg">No Internet Connection</string>
+    <string name="gps_disabled_msg">Please enable GPS first</string>
+    <string name="less_cities_count_msg">Please enter at least 3 cities</string>
+    <string name="more_cities_count_msg">Please enter max 7 cities</string>
+
+    <string name="cities_hint_txt">Cities like London,Paris,Dubai</string>
+    <string name="cities_desc_txt">You can add multiple city names from the user(comma Separated).Please note you should enter minimum 3 cities and max 7 cities.</string>
+
+    <string name="details_title_txt">Details</string>
+    <string name="update_btn">Update Data</string>
+    <string name="submit_btn">Submit</string>
+    <string name="step1_btn">STEP I</string>
+    <string name="step2_btn">STEP II</string>
+
+    <string name="step1_desc_txt">This option to add multiple city names from the user(comma Separated) then the app will fetch current temperatures.</string>
+    <string name="step2_desc_txt">1. Find the current city using GPS. \n2. Display the weather forecast for the current city for 5 days 3 hours for current City in a list.</string>
+    <string name="current_city_desc_txt">1. Find the current city using GPS. \n2. Display the weather forecast for the current city for 5 days 3 hours for current City in a list. \nSo please make sure GPS is enabled</string>
+
+</resources>

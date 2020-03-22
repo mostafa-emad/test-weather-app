@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bg_shape"
+    android:layout_margin="@dimen/padding_small"
+    android:padding="@dimen/padding_medium">
+
+    <TextView
+        android:id="@+id/city_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Dubai"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginEnd="@dimen/padding_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weather_desc_txt"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginEnd="@dimen/padding_medium"
+        android:lines="1"
+        android:maxLines="2"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name_txt"
+        tools:text="light intensity drizzle" />
+
+    <TextView
+        android:id="@+id/min_temperature_label_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:text="@string/min_temperature_label_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="@dimen/padding_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_desc_txt" />
+
+    <TextView
+        android:id="@+id/min_temperature_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_medium"
+        style="@style/TextAppearance.AppCompat.Small"
+        tools:text="10 °C"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_desc_txt" />
+
+    <TextView
+        android:id="@+id/max_temperature_label_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:text="@string/max_temperature_label_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="@dimen/padding_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_temperature_label_txt" />
+
+    <TextView
+        android:id="@+id/max_temperature_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        style="@style/TextAppearance.AppCompat.Small"
+        tools:text="35 °C"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_temperature_label_txt" />
+
+    <TextView
+        android:id="@+id/wind_speed_label_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:text="@string/wind_speed_label_txt"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="@dimen/padding_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_temperature_label_txt" />
+
+    <TextView
+        android:id="@+id/wind_speed_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:text="4.1"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_temperature_label_txt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
