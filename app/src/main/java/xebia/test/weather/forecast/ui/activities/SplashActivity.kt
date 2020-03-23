@@ -3,6 +3,7 @@ package xebia.test.weather.forecast.ui.activities
 import android.Manifest
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import xebia.test.weather.forecast.R
@@ -31,8 +32,10 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun complete() {
-        startActivity( Intent(this@SplashActivity, MainActivity::class.java))
-        finish()
+        Handler().postDelayed(Runnable {
+            startActivity( Intent(this@SplashActivity, MainActivity::class.java))
+            finish()
+        } , 2000)
 
 //        AppDatabase.getAppDatabase(this).initCitiesData(this)
 //            .observe(this, Observer {

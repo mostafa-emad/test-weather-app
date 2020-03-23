@@ -37,6 +37,7 @@ class Step2Fragment : BaseFragment() {
     private lateinit var citiesForecastAdapter : CitiesForecastRecyclerAdapter
 
     override fun initViews() {
+        setTitle(resources.getString(R.string.step2_title))
         setBackEnabled(true)
         val layoutManager = LinearLayoutManager(activity,  LinearLayoutManager.VERTICAL,false)
         rootView.forecast_details_recycler.layoutManager = layoutManager

@@ -20,8 +20,9 @@
     <string name="details_title_txt">Details</string>
     <string name="update_btn">Update Data</string>
     <string name="submit_btn">Submit</string>
-    <string name="step1_btn">STEP I</string>
-    <string name="step2_btn">STEP II</string>
+    <string name="landing_title">Landing</string>
+    <string name="step1_title">Step I</string>
+    <string name="step2_title">Step II</string>
 
     <string name="step1_desc_txt">This option to add multiple city names from the user(comma Separated) then the app will fetch current temperatures.</string>
     <string name="step2_desc_txt">1. Find the current city using GPS. \n2. Display the weather forecast for the current city for 5 days 3 hours for current City in a list.</string>

@@ -28,6 +28,7 @@ class Step1Fragment : BaseFragment() {
     private lateinit var citiesWeatherRecyclerAdapter : CitiesWeatherRecyclerAdapter
 
     override fun initViews() {
+        setTitle(resources.getString(R.string.step1_title))
         setBackEnabled(true)
         val layoutManager = LinearLayoutManager(activity,  LinearLayoutManager.VERTICAL,false)
         rootView.cities_weather_recycler.layoutManager = layoutManager

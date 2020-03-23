@@ -36,6 +36,13 @@ abstract class BaseFragment : Fragment() {
        return controller!!
     }
 
+    fun setTitle(title : String){
+        activity.let {
+            val value = it as MainActivity
+            value.supportActionBar?.setTitle(title)
+        }
+    }
+
     fun setBackEnabled(enabled : Boolean){
         activity.let {
             val value = it as MainActivity

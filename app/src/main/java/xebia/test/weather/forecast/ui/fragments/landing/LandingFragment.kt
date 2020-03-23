@@ -20,6 +20,8 @@ class LandingFragment : BaseFragment() {
     private lateinit var viewModel: LandingViewModel
 
     override fun initViews() {
+        setTitle(resources.getString(R.string.landing_title))
+
         rootView.step1_btn.setOnClickListener {
             getNavController().navigate(R.id.action_open_step1Fragment)
         }
