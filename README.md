@@ -48,9 +48,9 @@ Espresso - to write concise, beautiful, and reliable Android UI tests.
 
 # Screenshotes 
 
-![Screenshot](splash.png) 
-![Screenshot](articles.png) 
-![Screenshot](details.png)
+![Screenshot](landing.png) 
+![Screenshot](step1.png) 
+![Screenshot](step2.png)
 
 # Licence
 mostafa-emad
