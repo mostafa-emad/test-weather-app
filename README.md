@@ -3,9 +3,17 @@ This is a small app to fetch the weather forecast of multiple cities.
 
 
 # Features
-1. The app should accept multiple city names from the user(comma Separated) and display Temperature (Min and Max),Weather(description) and Wind Speed.
+1. Provides services for getting the most popular articles on NYTimes.com based on emails, shares, or views.
 
-2. Display the weather forecast for the current city for 5 days 3 hours for current City in a list.
+2. Show article in details.
+
+
+# Example Calls
+https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=yourkey
+
+https://api.nytimes.com/svc/mostpopular/v2/shared/1/facebook.json?api-key=yourkey
+
+https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=yourkey
 
 
 # Requirements
@@ -18,11 +26,9 @@ Build with Android Studio 3.5.3 Beta 2
 # Disclaimer
 The application working online.
 
-Please remember that all Examples of API calls that listed on this page are just samples and do not have any connection to the real API service!
-
 
 # Built With
-OpenWeatherMap - Weather API used
+New York Times API - Demo account 
 
 Kotlin - A free, open source, statically typed “pragmatic” programming language initially designed for the JVM (JVM) and Android that combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support.
 
@@ -42,9 +48,9 @@ Espresso - to write concise, beautiful, and reliable Android UI tests.
 
 # Screenshotes 
 
-![Screenshot](landing.png) 
-![Screenshot](step1.png) 
-![Screenshot](step2.png)
+![Screenshot](splash.png) 
+![Screenshot](articles.png) 
+![Screenshot](details.png)
 
 # Licence
 mostafa-emad
